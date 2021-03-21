@@ -1,23 +1,229 @@
-.banner{
-    &__nav{
-        display: flex;
-        justify-content: space-between;
-background: $gray;
-    
+.banner {
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
 
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    background: $gray;
+
+
+  }
+
+  &__content {
+    padding: 80px 15px;
+  }
+
+  &__link {
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px 10px;
+    color: #fff;
+    border-bottom: 5px solid $gray;
+    font-size: 14px;
+    transition: $transition2;
+
+    &.active {
+      font-weight: 500;
+      color: $blue;
+      border-bottom: 5px solid $blue;
     }
-    &__link{
-        text-align: center;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px 15px 10px;
-        color: #fff;border-bottom: 5px solid $gray;
+  }
+
+  &__title {
+    width: 100%;
+    font-size: 30px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+  }
+
+  &__subtitle {
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 20px;
+      position: relative;
+      padding-left: 35px;
+      list-style: none;
+      font-size: 21px;
+      line-height: 25px;
+
+      &::before {
+        content: url("../img/checklist.svg");
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 10px;
+        height: 10px;
+      }
+    }
+
+  }
+
+  &-form {
+    &__title {
+      display: block;
+      color: #fff;
+      font-weight: 700;
+      font-size: 30px;
+      margin-bottom: 12px;
+      text-align: center;
+      line-height: 35px;
+      letter-spacing: 2px;
+    }
+
+    &__subtitle {
+      display: block;
+      color: #fff;
+      font-size: 19px;
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    &__btn {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding: 8px;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .banner {
+    &__title {
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+    &__subtitle {
+      font-size: 22px;
+      line-height: 30px;
+    }
+
+    ul {
+      li {
+        font-size: 16px;
+      }
+    }
+
+    &__link {
+      font-size: 13px;
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 991px) {
+  .banner {
+    &__content {
+      padding: 60px 15px;
+    }
+
+    &__title {
+      font-size: 22px;
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    ul {
+      li {
         font-size: 14px;
-        transition: $transition2;
-        &.active{
-            color: $blue;
-            border-bottom: 5px solid $blue;
-        }
+      }
     }
+
+    &__link {
+      font-size: 12px;
+    }
+
+    &-form {
+      &__title {
+        font-size: 26px;
+        margin-bottom: 12px;
+        line-height: 30px;
+      }
+
+      &__subtitle {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 767px) {
+  .banner {
+    &__nav{
+      flex-wrap: wrap;
+    }
+    &__link {
+      width: 33.33333%;
+    }
+    &__title{
+      text-align: center;
+    }
+    &__subtitle{
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    ul{
+      width: 100%;
+      li{
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+
+}
+@media screen and (max-width: 575px) {
+  .banner {
+    &__link {
+      padding: 10px;
+      font-size: 10px;
+    }
+    &__content{
+      padding: 30px 15px;
+    }
+    &__title{
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    ul{
+      width: 100%;
+      li{
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+
 }

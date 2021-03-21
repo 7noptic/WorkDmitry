@@ -1,0 +1,103 @@
+.work {
+  background: #f7f7f7;
+  padding: 50px 0;
+
+  &__title {
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 36px;
+    margin-bottom: 45px;
+    color: #0095e5;
+  }
+
+  &__name {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 22px;
+    max-width: 280px;
+    margin: 0 auto;
+    color: #0095e5;
+  }
+
+  &__img {
+    display: block;
+    width: 154px;
+    height: 154px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: solid 3px #0095e5;
+    line-height: 228px;
+    text-align: center;
+    padding: 40px;
+    background: #fff;
+    margin: 0 auto 35px;
+    -webkit-box-shadow: 0px 0px 11px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 11px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 11px 2px rgba(34, 60, 80, 0.2);
+    transition: $transition3;
+
+    &:hover {
+      transform: translateY(-15px);
+    }
+
+    &-arr {
+      position: relative;
+
+      &::before {
+        content: url("../img/rarr.svg");
+        position: absolute;
+        top: calc(50% - 20px);
+        right: -30px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 991px) {
+  .work {
+    &__name {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+@media screen and(max-width: 767px) {
+  .work {
+    &__name {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 100px;
+    }
+    &__img {
+
+
+      &-arr {
+        position: relative;
+
+        &::before {
+          bottom: -140px;
+          top: auto;
+          right: calc(50% - 20px);
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 575px){
+  .work{
+    &__title {
+      font-size: 20px;
+      line-height: 26px;
+      margin: 0 auto 25px auto;
+    }
+  }
+}

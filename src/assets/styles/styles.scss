@@ -5,12 +5,13 @@
 @import "mixin";
 
 /* А */
+@import "blocks/adv";
 /* В */
-@import "blocks/board-video";
 @import "blocks/btn";
 @import "blocks/banner";
 /* C */
 @import "blocks/container";
+@import "blocks/checklist";
 /* D */
 
 /* E */
@@ -41,11 +42,13 @@
 
 /* P */
 /* Q */
-
+@import "blocks/quest";
 /* R */
 @import "blocks/rating-star";
+@import "blocks/reviews";
 /* S */
 @import "blocks/swiper";
+@import "blocks/specialist";
 /* T */
 @import "blocks/tags";
 @import "blocks/tabs";
@@ -54,7 +57,7 @@
 /* V */
 
 /* W */
-
+@import "blocks/work";
 /* X */
 
 /* Z */

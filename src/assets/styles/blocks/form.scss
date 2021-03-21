@@ -2,10 +2,13 @@
   &__input{
     text-align: center;
     padding: 10px;
-    border: 1px solid #E6E6E6;
+    border: 2px solid #E6E6E6;
     background: #fff;
     border-radius: $radiusBtn;
     transition: $transition3;
+    width: 100%;
+    margin-bottom: 15px;
+
     &::placeholder{
       text-align: center;
       color: $brown;
@@ -16,7 +19,7 @@
     }
     
     &:hover,&:active,&:focus{
-      border: 1px solid $orange;
+      border: 2px solid $blue;
     }
   }
   &__textarea{
@@ -24,10 +27,11 @@
     height: 140px;
     text-align: center;
     padding: 10px;
-    border: 1px solid #E6E6E6;
+    border: 2px solid #E6E6E6;
     background: #fff;
     border-radius: $radiusBtn;
     transition: $transition3;
+    margin-bottom: 15px;
     &::placeholder{
       text-align: center;
       color: $brown;
@@ -38,7 +42,7 @@
     }
     
     &:hover,&:active,&:focus{
-      border: 1px solid $orange;
+      border: 2px solid $blue;
     }
   }
 }

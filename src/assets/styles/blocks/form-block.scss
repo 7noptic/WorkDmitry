@@ -1,94 +1,53 @@
-.form-block{
-  margin: 50px 0;
-  &__wrapper{
-    
-    & > div{
-      background-color: #E6E6E6;
+.form-block {
+  background: #373838;
+  padding: 55px 0;
 
-      border-radius: $radiusBtn;
-    }
+  &__wrapper {
+    max-width: 600px;
+    background: rgba(255, 255, 255, .2);
+    margin: 0 auto 0 auto;
+    padding: 35px 35px 35px 35px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
   }
-  &__img{
-    transform: scale(1.1) translate(25px, -18px);
-  }
-  &__text{
-    margin-left: 30px;
+
+  &__title {
+    color: #0095e5;
+    text-align: center;
+    font-size: 26px;
+    line-height: 28px;
     font-weight: 700;
-    font-size: 30px;
-    line-height: 38px;
+    text-transform: uppercase;
+    margin-bottom: 17px;
   }
-  &-form{
-    &__wrapper{
-      padding: 55px 0 30px!important;
-      background-image: none!important;
-    }
-  }
-}
-@media screen and (max-width:1599px){
-  .form-block{
-    &__img{
-      transform: scale(1.2) translate(0px, -10px);
-    }
-    &__text{
-      font-size: 28px;
-      line-height: 36px;
-    }
-  }
-}
-@media screen and (max-width:1199px){
-  .form-block{
-    padding: 40px 0;
-    &__img{
-      transform: scale(1.2) translate(0px, -1px);
-    }
-    &__text{
-      font-size: 22px;
-      line-height: 28px;
-    }
-    &-form{
-      &__wrapper{
-        padding: 30px 0 0!important;
-      }
-    }
-    form{
-      width: 100%;
-    }
+
+  &__subtitle {
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    max-width: 450px;
+    margin: 0 auto 20px auto;
   }
 }
 
-@media screen and (max-width:767px){
-  .form-block{
-    padding: 40px 0;
-    
-    &__text{
-      font-size: 18px;
-      line-height: 24px;
-      margin-left: 0;
+@media screen and (max-width: 575px) {
+  .form-block {
+    &__wrapper{
+      padding: 35px 15px;
     }
-    &-form{
-      &__wrapper{
-        padding: 25px 0 0!important;
-      }
+    &__title {
+      font-size: 20px;
+      line-height: 26px;
+      margin: 0 auto 25px auto;
     }
-    
-  }
-}
-@media screen and (max-width:575px){
-  .form-block{
-    padding: 40px 0;
-    
-    &__text{
-      font-size: 16px;
+
+    &__subtitle {
+      font-size: 14px;
       line-height: 20px;
-      width: 100%;
-      text-align: center;
-      margin-top: 20px;
+      margin: 0 auto 25px auto;
     }
-    &-form{
-      &__wrapper{
-        padding: 25px 0 0!important;
-      }
-    }
-    
   }
 }

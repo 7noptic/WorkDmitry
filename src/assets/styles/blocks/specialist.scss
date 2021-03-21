@@ -1,0 +1,85 @@
+.specialist{
+  padding: 70px 0;
+  background-color: #fff;
+
+  &__title{
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 36px;
+    margin-bottom: 45px;
+    color: #0095e5;
+  }
+  &__name{
+    display: block;
+    font-weight: 700;
+    font-size: 17px;
+    margin: 0 0 10px 0;
+    line-height: 19px;
+    text-align: center;
+  }
+  &__work{
+    display: block;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 3px;
+    text-align: center;
+  }
+  &__stage{
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &__img{
+    max-width: 150px;
+    max-height: 150px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+  }
+  &__btn{
+    padding: 10px 30px;
+  }
+}
+@media screen and(max-width: 991px) {
+  .specialist{
+    padding: 70px 0;
+    background-color: #fff;
+
+    &__title{
+      font-size: 28px;
+      line-height: 24px;
+      margin-bottom: 40px;
+    }
+    &__name{
+      font-size: 14px;
+      line-height: 17px;
+    }
+    &__work{
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    &__img{
+      max-width: 130px;
+      max-height: 130px;
+    }
+    &__btn{
+      padding: 10px 30px;
+    }
+  }
+}
+@media screen and (max-width: 575px){
+  .specialist{
+    &__title {
+      font-size: 20px;
+      line-height: 26px;
+      margin: 0 auto 25px auto;
+    }
+  }
+}
