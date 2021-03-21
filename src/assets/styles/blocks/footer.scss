@@ -1,0 +1,244 @@
+.footer{
+    padding: 130px 0 0;
+    &__row{
+        padding: 40px 0;
+        border-bottom: 1px solid rgba(#000, .15);
+    }
+    &__socials{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        a{
+            margin-left: 20px;
+            transition: $transition3;
+            &:hover{
+                transform: scale(1.25);
+            }
+        }
+    }
+    &__title{
+        font-size: 18px;
+line-height: 23px;
+font-weight: 700;
+text-transform: uppercase;
+margin-bottom: 20px;
+    }
+    &__nav{
+        a{
+            display: block;
+            font-size: 14px;
+line-height: 26px;
+        }
+    }
+    &__text{
+        display: block;
+        font-size: 14px;
+line-height: 24px;
+&-b{
+    font-size: 14px;
+line-height: 18px;
+font-weight: 700;
+margin-bottom: 23px;
+display: block;
+}
+    }
+    &__subtitle{
+        font-size: 16px;
+line-height: 24px;
+font-weight: 700;
+margin-bottom: 15px;
+
+    }
+&__tel{
+    font-size: 30px;
+line-height: 38px;
+text-transform: uppercase;
+font-weight: 700;
+margin-bottom: 15px;
+display: block;
+}
+&__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 18px;
+    margin-bottom: 50px;
+}
+&__submenu{
+    display: flex;
+    li{
+        margin-right: 70px;
+        &:last-child,&:last-of-type{
+            margin-right: 0;
+        }
+    }
+    a{
+        display: block;
+        font-size: 14px;
+line-height: 24px;
+
+    }
+}
+&__link{
+    transition: $transition3;
+    path{
+        cursor: pointer;
+        transition: $transition3;
+    }
+    &:hover{
+        path{
+            fill: $orange;
+        }
+    }
+}
+&__copy{
+    padding: 40px 0;
+}
+}
+
+@media screen and (max-width:1599px){
+    .footer{
+        &__tel{
+            font-size: 24px;
+        }
+    }
+}
+@media screen and(max-width:1199px){
+    .footer{
+        &__nav{
+            a{
+font-size: 13px;
+            }
+        }
+        &__text{
+            font-size: 13px;
+            &-b{
+                font-size: 13px;
+            }
+        }
+        &__tel{
+            font-size: 18px;
+        }
+        &__subtitle{
+            font-size: 14px;
+        }
+        &__btn{
+            margin-bottom: 35px;
+        }
+        &__submenu{
+            li{
+                margin-right: 50px;
+                
+                a{
+font-size: 13px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:991px){
+    .footer{
+        padding: 80px 0 0;
+        &__socials{
+            font-size: 14px;
+                a{
+                    margin-left: 15px;
+                    transition: $transition3;
+                    &:hover{
+                        transform: scale(1.25);
+                    }
+                }
+            }
+            &__nav{
+                margin-bottom: 30px!important;
+            }
+            &__submenu{
+                display: flex;
+                justify-content: space-between;
+                li{
+                    margin-right: 0px;
+                    
+                    a{
+    font-size: 13px;
+                    }
+                }
+            }
+            &__link{
+                display: flex;
+                align-items: center;
+            }
+    }
+}
+@media screen and (max-width:767px){
+    .footer{
+        padding: 60px 0 0;
+        &__socials{
+            span{
+                display: none;
+            }
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+                a{
+                    margin-left: 0;
+                    transition: $transition3;
+                    &:hover{
+                        transform: scale(1.25);
+                    }
+                }
+            }
+            &__nav{
+                margin-bottom: 30px!important;
+            }
+            &__copy{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+            &__submenu{
+                justify-content: space-around;
+                margin: 20px 0!important;
+            }
+            &__link{
+                width: 100%;
+
+                justify-content: center;
+            }
+            .logo{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+            }
+    }
+}
+@media screen and (max-width:575px){
+    .footer{
+        &__title{
+            text-align: center;
+        }
+        &__nav{
+            display: none;
+            &.active{
+                display: block;
+            }
+            a{
+                text-align: center;
+            }
+        }
+        &__text{
+            text-align: center;
+            &-b{
+                text-align: center;
+            }
+        }
+        &__tel{
+            text-align: center;
+        }
+        &__subtitle{
+            text-align: center;
+        }
+    }
+}

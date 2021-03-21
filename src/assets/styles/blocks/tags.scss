@@ -1,0 +1,32 @@
+.tags{
+    position: relative;
+    &__link{
+        padding: 6px 15px;
+    }
+    &__next,&__prev{
+        position: absolute;
+        top: calc(50% - 6px);
+        cursor: pointer;
+    }
+    &__next{
+        right: 0;
+    }
+    &__prev{
+        transform: rotate(180deg);
+        left: 0;
+    }
+}
+@media screen and (max-width:991px){
+    .tags{
+        &__link{
+            padding: 5px 10px;
+        }
+    }
+}
+@media screen and (max-width:767px){
+    .tags{
+        &__link{
+            padding: 4px 6px;
+        }
+    }
+}

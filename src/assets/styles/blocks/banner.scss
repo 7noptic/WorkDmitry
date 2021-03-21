@@ -1,0 +1,23 @@
+.banner{
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+background: $gray;
+    
+
+    }
+    &__link{
+        text-align: center;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 15px 10px;
+        color: #fff;border-bottom: 5px solid $gray;
+        font-size: 14px;
+        transition: $transition2;
+        &.active{
+            color: $blue;
+            border-bottom: 5px solid $blue;
+        }
+    }
+}
